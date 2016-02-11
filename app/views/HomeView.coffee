@@ -1,5 +1,6 @@
 RootView = require 'views/core/RootView'
 template = require 'templates/home-view'
+CreateAccountModal = require 'views/core/CreateAccountModal'
 
 module.exports = class HomeView extends RootView
   id: 'home-view'
@@ -40,6 +41,8 @@ module.exports = class HomeView extends RootView
 
   afterInsert: ->
     super(arguments...)
+    modal = new CreateAccountModal()
+    @openModalView(modal)
 
   isOldBrowser: ->
     if $.browser

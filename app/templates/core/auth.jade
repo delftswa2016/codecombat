@@ -25,6 +25,7 @@
         span(data-i18n="play_level.victory_sign_up_poke") Want to save your code? Create a free account!
 
     form.form
+      if mode === 'login'
       .form-group
         label.control-label(for="email")
           span(data-i18n="general.email") Email
@@ -42,6 +43,33 @@
           input#password.input-large.form-control(name="password", type="password", value=formValues.password)
 
       if mode === 'signup'
+        .row
+          .col-md-5
+            .form-group
+              label.control-label(for="email")
+                span(data-i18n="general.email") Email
+                | :
+              .input-border
+                input#email.input-large.form-control(name="email", type="email", value=formValues.email)
+            .form-group
+              if mode === 'login'
+                div#recover-account-wrapper
+                  a(data-toggle="coco-modal", data-target="core/RecoverModal", data-i18n="login.forgot_password")#link-to-recover Forgot your password?
+              label.control-label(for="password")
+                span(data-i18n="general.password") Password
+                | :
+              .input-border
+                input#password.input-large.form-control(name="password", type="password", value=formValues.password)
+          .col-md-5.col-md-offset-2
+            #facebook-login-btn.btn.btn-primary.btn-lg.btn-illustrated.network-login
+              img.network-logo(src="/images/pages/community/logo_facebook.png", draggable="false")
+              span.sign-in-blurb(data-i18n="login.sign_in_with_facebook") Sign in with Facebook
+            .btn.btn-danger.btn-lg.btn-illustrated.network-login
+              img.network-logo(src="/images/pages/community/logo_g+.png", draggable="false")
+              span.sign-in-blurb(data-i18n="login.sign_in_with_gplus") Sign in with G+
+              .gplus-login-wrapper
+                .gplus-login-button#gplus-login-button
+
         .row
           .col-md-6
             .form-group
@@ -88,14 +116,15 @@
     //  btn.btn.btn-sm.github-login-button#github-login-button
     //    img(src="/images/pages/modal/auth/github_icon.png")
     //    | GitHub
-    #facebook-login-btn.btn.btn-primary.btn-lg.btn-illustrated.network-login
-      img.network-logo(src="/images/pages/community/logo_facebook.png", draggable="false")
-      span.sign-in-blurb(data-i18n="login.sign_in_with_facebook") Sign in with Facebook
-    .btn.btn-danger.btn-lg.btn-illustrated.network-login
-      img.network-logo(src="/images/pages/community/logo_g+.png", draggable="false")
-      span.sign-in-blurb(data-i18n="login.sign_in_with_gplus") Sign in with G+
-      .gplus-login-wrapper
-        .gplus-login-button#gplus-login-button
+    if mode === 'login'
+      #facebook-login-btn.btn.btn-primary.btn-lg.btn-illustrated.network-login
+        img.network-logo(src="/images/pages/community/logo_facebook.png", draggable="false")
+        span.sign-in-blurb(data-i18n="login.sign_in_with_facebook") Sign in with Facebook
+      .btn.btn-danger.btn-lg.btn-illustrated.network-login
+        img.network-logo(src="/images/pages/community/logo_g+.png", draggable="false")
+        span.sign-in-blurb(data-i18n="login.sign_in_with_gplus") Sign in with G+
+        .gplus-login-wrapper
+          .gplus-login-button#gplus-login-button
 
   .extra-pane
     if mode === 'login'

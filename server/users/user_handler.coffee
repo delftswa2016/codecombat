@@ -967,4 +967,11 @@ UserHandler = class UserHandler extends Handler
     @recalculateStats statName
     @sendAccepted res, {}
 
+  get: (req, res) ->
+    if req.query.gplusID
+      User.find({gplusID: req.query.gplusID}).exec (err, user) =>
+        return @sendNotFoundError(res) unless
+        return @
+    super(req, res)
+
 module.exports = new UserHandler()

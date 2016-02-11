@@ -1,0 +1,100 @@
+.modal-dialog
+  .modal-content
+    img(src="/images/pages/modal/auth/signup-background.png", draggable="false").auth-modal-background
+    h1(data-i18n="login.sign_up") Create Account
+
+    div#close-modal
+      span.glyphicon.glyphicon-remove
+
+  .auth-form-content
+    if view.options.showSignupRationale
+      .alert.alert-info
+        span(data-i18n="play_level.victory_sign_up_poke")
+
+    form.form
+      #email-password-row.row
+        .col-md-6
+          .form-group
+            label.control-label(for="email")
+              span(data-i18n="general.email") Email
+              | :
+            .input-border
+              input#email.input-large.form-control(name="email", type="email", value=view.previousFormInputs.email)
+    
+          .form-group
+            label.control-label(for="password")
+              span(data-i18n="general.password") Password
+              | :
+            .input-border
+              input#password.input-large.form-control(name="password", type="password", value=view.previousFormInputs.password)
+
+        .col-md-6
+          .auth-network-logins.text-center
+            strong Or sign up with
+            #facebook-login-btn.btn.btn-primary.btn-lg.btn-illustrated.network-login
+              img.network-logo(src="/images/pages/community/logo_facebook.png", draggable="false")
+              span.sign-in-blurb(data-i18n="login.sign_in_with_facebook") Sign in with Facebook
+            #gplus-login-btn.btn.btn-danger.btn-lg.btn-illustrated.network-login
+              img.network-logo(src="/images/pages/community/logo_g+.png", draggable="false")
+              span.sign-in-blurb(data-i18n="login.sign_in_with_gplus") Sign in with G+
+              .gplus-login-wrapper
+                .gplus-login-button#gplus-login-button
+                  
+      #gplus-logged-in-row.row.text-center.hide
+        h2 You've successfully connected with Google+!
+        p Finish signing up so you can log in with your Google+ account.
+        
+      #facebook-logged-in-row.row.text-center.hide
+        h2 You've successfully connected with Facebook!
+        p Finish signing up so you can log in with your Facebook account.
+        
+
+      .row
+        .col-md-6
+          .form-group
+            label.control-label(for="name")
+              span(data-i18n="general.name") Name
+              | :
+            .input-border
+              if me.get('name')
+                input#name.input-large.form-control(name="name", type="text", value=me.get('name'))
+              else
+                input#name.input-large.form-control(name="name", type="text", value="", placeholder="e.g. Alex W the Skater")
+                
+          .form-group
+            label.control-label(for="school-input")
+              span.spr(data-i18n="signup.school_name") School Name and City
+              em.optional-note
+                | (
+                span(data-i18n="signup.optional") optional
+                | ):
+            .input-border
+              input#school-input.input-large.form-control(name="schoolName", data-i18n="[placeholder]signup.school_name_placeholder", value=view.previousFormInputs.schoolName || '')
+                
+          .form-group
+            label.control-label(for="school-input")
+              span.spr(data-i18n="") Class Code
+              em.optional-note
+                | (
+                span(data-i18n="signup.optional") optional
+                | ):
+            .input-border
+              input#school-input.input-large.form-control(name="schoolName", value=view.previousFormInputs.classCode || '')
+              
+        .col-md-6
+          .form-group.checkbox
+            label.control-label(for="subscribe")
+              .input-border
+                input#subscribe(name="subscribe", type="checkbox", checked='checked')
+                span.custom-checkbox
+                  .glyphicon.glyphicon-ok
+              span(data-i18n="signup.email_announcements") Receive announcements by email
+              
+          .well Hey students! If you are joining CodeCombat as part of a classroom, ask your teacher if you have a Class Code. If you're not sure, you can always add one later.
+                
+
+      input.btn.btn-lg.btn-illustrated.btn-block.btn-success#signup-button(value=translate("signup.sign_up"), type="submit")
+
+  .extra-pane
+    .switch-explanation(data-i18n="signup.login_switch") Already have an account?
+    .btn.btn-lg.btn-illustrated.btn-warning#switch-to-login-button(data-i18n="login.log_in")
