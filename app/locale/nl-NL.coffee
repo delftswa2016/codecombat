@@ -94,11 +94,11 @@ module.exports = nativeDescription: "Nederlands (Nederland)", englishDescription
     twitter_follow: "Volgen"
     teachers: "Docenten"
     careers: "Banen"
-#    facebook: "Facebook"
-#    twitter: "Twitter"
-#    create_a_class: "Create a Class"
-#    other: "Other"
-#    learn_to_code: "Learn to Code!"
+    facebook: "Facebook"
+    twitter: "Twitter"
+    create_a_class: "Maak een Klas"
+    other: "Andere"
+    learn_to_code: "Leer te programmeren!"
 
   modal:
     close: "Sluiten"
@@ -408,9 +408,9 @@ module.exports = nativeDescription: "Nederlands (Nederland)", englishDescription
     tip_strong_opponents: "Zelf de sterkste vijand heeft een zwakheid. - Itachi Uchiha"
     tip_paper_and_pen: "Voor je begint te programmeren, kan je altijd met pen en papier een plan maken."
     tip_solve_then_write: "Los eerst het probleem op. Schrijf dan de code. - John Johnson"
-#    tip_compiler_ignores_comments: "Sometimes I think that the compiler ignores my comments."
-#    tip_understand_recursion: "The only way to understand recursion is to understand recursion."
-#    tip_life_and_polymorphism: "Open Source is like a totally polymorphic heterogeneous structure: All types are welcome."
+    tip_compiler_ignores_comments: "Soms denk ik dat de compiler me antwoorden negeert."
+    tip_understand_recursion: "De enige manier om recursie te begrijpen is om recursie te begrijpen."
+    tip_life_and_polymorphism: "Open Source is als een totale polymorphisme heterogeneous struktuur: Alle types zijn welkom."
 
   game_menu:
     inventory_tab: "Inventaris"
@@ -607,19 +607,19 @@ module.exports = nativeDescription: "Nederlands (Nederland)", englishDescription
     editor_config_behaviors_description: "Automatisch aanvullen van (gekrulde) haakjes en aanhalingstekens."
 
   about:
-#    main_title: "If you want to learn to program, you need to write (a lot of) code."
-#    main_description: "At CodeCombat, our job is to make sure you're doing that with a smile on your face."
-#    mission_link: "Mission"
-#    team_link: "Team"
-#    community_link: "Community"
-#    story_link: "Story"
-#    careers_link: "Careers"
-#    press_link: "Press"
-#    mission_title: "Our mission: make programming accessible to every student on Earth."
-#    mission_description_1: "<strong>Programming is magic</strong>. It's the ability to create things from pure imagination. We started CodeCombat to give learners the feeling of wizardly power at their fingertips by using <strong>typed code</strong>." # {change}
-#    mission_description_2: "As it turns out, that enables them to learn faster too. WAY faster. It's like having a conversation instead of reading a manual. We want to bring that conversation to every school and to <strong>every student</strong>, because everyone should have the chance to learn the magic of programming." # {change}
-#    team_title: "Meet the CodeCombat team"
-#    team_values: "We value open and respectful dialog, where the best idea wins. Our decisions are grounded in customer research and our process is focused on delivering tangible results for them. Everyone is hands-on, from our CEO to our Github contributors, because we value growth and learning in our team."
+    main_title: "Als je wil leren programmeren, moet je (heel veel) code schrijven."
+    main_description: "Bij CodeCombat, is het onze baan om te zorgen dat je dat doet met een glimlach op je gezicht."
+    mission_link: "Missie"
+    team_link: "Team"
+    community_link: "Gemeenschap"
+    story_link: "Verhaal"
+    careers_link: "Carrières"
+    press_link: "Pers"
+    mission_title: "Onze missie: maak programmeren toegankelijk voor elke student op aarde."
+    mission_description_1: "<strong>Programmeren is magie</strong>. Het is het vermogen om dingen te maken vanuit pure fantasie. We zijn CodeCombat begonnen om leerlingen het gevoel the geven van een toverachtige kracht aan hun vingertoppen door het gebruik van <strong>getypte code</strong>." # {change}
+    mission_description_2: "Het blijkt, dat het ze er ook nog in toe staat stelt om sneller te leren. VEEL sneller. Het is zoals een gesprek hebben in plaats van het lezen van een handleiding. We willen dat gesprek brengen naar elke school en naar <strong>elke student</strong>, omdat iedereen de kans moet krijgen om die magie van programmeren te leren." # {change}
+    team_title: "Ontmoet het CodeCombat team"
+    team_values: "We waarderen een open en respectvol dialoog, waar het beste idee wint. Onze keuzes zijn onderbouwd door bezoeker onderzoek en onze werkwijze is gefocust op het leveren van tastbare resultaten voor hun. Iedereen doet mee, van onze CEO tot onze Github bijdragers, omdat we groei en leren waarderen in ons team."
     nick_title: "Programmeur" # {change}
     nick_blurb: "Motivatie Goeroe"
     matt_title: "Programmeur" # {change}
@@ -644,9 +644,9 @@ module.exports = nativeDescription: "Nederlands (Nederland)", englishDescription
 #    jose_blurb: "Taking Off"
     carlos_title: "Regio Manager, Brazilië"
     carlos_blurb: "Selderij Man"
-#    community_title: "...and our open-source community"
-#    community_subtitle: "Over 450 contributors have helped build CodeCombat, with more joining every week!"
-#    community_description_1: "CodeCombat is a community project, with hundreds of players volunteering to create levels, contribute to our code to add features, fix bugs, playtest, and even translate the game into 50 languages so far. Employees, contributors and the site gain by sharing ideas and pooling effort, as does the open source community in general. The site is built on numerous open source projects, and we are open sourced to give back to the community and provide code-curious players a familiar project to explore and experiment with. Anyone can join the CodeCombat community! Check out our"
+    community_title: "...en onze open-source gemeenschap"
+    community_subtitle: "Meer dan 450 bijdragers hebben geholpen bij het bouwen van CodeCombat, met meer die zich er bij voegen elke week!"
+    community_description_1: "CodeCombat is een gemeenschap project, met honderden spelers die vrijwillig levels maken, bijdrage aan onze code om dingen toe te voegen, bugs te maken, speeltesten, en zelfs helpen het spel te vertalen in 50 talen zover. Werknemers, bijdragers en de site krijgen meer door het delen van ideeën en pooling inspanning, zoals de open source gemeenschap in het algemeen doet. De site is gemaakt met meerdere open source projecten, en we zijn open source zodat we wat terug kunnen geven aan de gemeenschap en leveren programmeer geïnteresseerde spelers een vertouwd project om te verkennen en mee te experimenteren. Iedereen kan zich bij de CodeCombat gemeenschap voegen! Bekijk onze"
 #    community_description_link: "contribute page"
 #    community_description_2: "for more info."
 #    number_contributors: "Over 450 contributors have lent their support and time to this project."
